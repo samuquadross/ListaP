@@ -75,6 +75,39 @@
   #hero h2 { font-size: 52px; }
   #hero p  { font-size: 20px; }
 }
+
+  /* CABEÇALHO BONITO E COMPACTO NO TELEMÓVEL */
+@media (max-width: 900px) {
+  header {
+    padding: 8px 0;
+    border-bottom: 1.5px solid var(--accent);
+  }
+  .nav-inner {
+    padding: 0 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brand h1 {
+    font-size: 26px !important;   /* Lista P fica mais pequeno e elegante */
+  }
+  nav {
+    display: flex;
+    gap: 16px;                     /* espaço entre os links */
+  }
+  nav a {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+  }
+  /* O link ativo ou que está na secção atual fica rosa */
+  nav a:hover,
+  nav a:active,
+  nav a:focus {
+    color: var(--accent);
+  }
+}
   </style>
 </head>
 <body>
