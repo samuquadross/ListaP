@@ -108,6 +108,28 @@
     color: var(--accent);
   }
 }
+
+/* Referência mais pequena e elegante no telemóvel */
+@media (max-width: 900px) {
+  #modal-title {
+    font-size: 26px !important;        /* "Paga 1€ e participa!" ou "Obrigado..." */
+  }
+  #modal-text {
+    font-size: 17px !important;        /* o texto da referência */
+    line-height: 1.5;
+  }
+  #modal-text strong {
+    font-size: 19px !important;        /* "Sorteio Natal + o teu nome" */
+  }
+  .modal-box p:nth-of-type(2) strong {  /* o "1€" */
+    font-size: 24px !important;
+  }
+  .modal-box p:nth-of-type(3),
+  .modal-box p:nth-of-type(6) {         /* MB Way e IBAN números */
+    font-size: 26px !important;
+    letter-spacing: 2px;
+  }
+}
   </style>
 </head>
 <body>
